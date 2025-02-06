@@ -74,13 +74,14 @@ html {
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  padding: 15px 30px;
+  padding: 15px;
   font-size: 2em;
   color: #ffffff; /* Negro */
   background: hsl(var(--background)); /* Negro semitransparente */
   border: 2px solid hsl(var(--primary)); /* Dorado brillante */
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  border-radius: 16px;
 }
 
 .enter-button:hover {
@@ -106,13 +107,14 @@ html {
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    padding: 15px 30px;
+    padding:10px;
     font-size: 2em;
     color: #ffffff; /* Negro */
     background: hsl(var(--background)); /* Negro semitransparente */
     border: 2px solid hsl(var(--primary)); /* Dorado brillante */
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+    border-radius: 16px;
   }
 
 }
@@ -127,5 +129,21 @@ html {
     color: #ffffff; /* Blanco */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
     z-index: 2;
+  }
+
+  .enter-button {
+    font-family: "Italianno", serif;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 1.5em;
+    color: #ffffff; /* Negro */
+    background: hsl(var(--background)); /* Negro semitransparente */
+    border: 2px solid hsl(var(--primary)); /* Dorado brillante */
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 16px;
   }
 }
