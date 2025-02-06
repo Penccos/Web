@@ -1,4 +1,5 @@
 @import url("./vars.css");
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 /* Configuración general */
 body,
@@ -9,6 +10,13 @@ html {
   overflow: hidden;
   font-family: "Roboto", sans-serif;
   background-color: hsl(var(--foreground)); /* Gris claro */
+}
+
+/* Fuente */
+.italianno-regular {
+  font-family: "Italianno", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Carrusel de fondo */
@@ -31,43 +39,44 @@ html {
 
 /* Definir las imágenes del carrusel */
 .carousel .slide:nth-child(1) {
-  background-image: url("../IMAGES/EXTERIOR/Alrededores\ 1.jpg");
+  background-image: url("../IMAGES/PORTADA/Imagen\ 1\ presentación.jpg");
 }
 .carousel .slide:nth-child(2) {
-  background-image: url("../IMAGES/EXTERIOR/Jardín\ 10.jpg");
+  background-image: url("../IMAGES/PORTADA/Imagen\ 2\ presentación.jpg");
 }
 .carousel .slide:nth-child(3) {
-  background-image: url("../IMAGES/EXTERIOR/Alrededores\ 7.jpg");
+  background-image: url("../IMAGES/PORTADA/Imagen\ 3\ presentación.jpg");
 }
 .carousel .slide:nth-child(4) {
-  background-image: url("../IMAGES/EXTERIOR/Jardín\ 4\ 2.JPG");
+  background-image: url("../IMAGES/PORTADA/Imagen\ 4\ presentación.jpg");
 }
 .carousel .slide:nth-child(5) {
-  background-image: url("../IMAGES/EXTERIOR/La\ casa\ 03.jpg");
+  background-image: url("../IMAGES/PORTADA/Imagen\ 5\ final\ vista\ general\ 1.JPG");
 }
 
 /* Nombre de la casa */
 .house-name {
+  font-family: "Italianno", serif;
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 40%;
-  font-size: 3em;
-  font-weight: bold;
+  top: 35%;
+  font-size: 4em;
   color: #ffffff; /* Blanco */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
   z-index: 2;
 }
 
 /* Botón de entrada */
 .enter-button {
+  font-family: "Italianno", serif;
   position: absolute;
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   padding: 15px 30px;
-  font-size: 1.5em;
-  color: #000000; /* Negro */
+  font-size: 2em;
+  color: #ffffff; /* Negro */
   background: hsl(var(--background)); /* Negro semitransparente */
   border: 2px solid hsl(var(--primary)); /* Dorado brillante */
   text-decoration: none;
