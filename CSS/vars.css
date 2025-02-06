@@ -1,0 +1,7 @@
+@layer base {
+  :root {
+    --background: 332, 41%, 78%;
+    --foreground: 332, 23%, 87%;
+    --primary: 332, 91%, 39%;
+  }
+}

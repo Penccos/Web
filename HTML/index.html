@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa en Venta</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <script src="../JS/main.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Barra de navegación con enlaces a las secciones y botones de cambio de idioma -->
+    <nav>
+      <div class="language-buttons">
+        <div id="dropbtn" class="dropbtn">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
+            alt="spanish"
+            id="lang-img"
+          />
+        </div>
+        <div class="dropdown-content">
+          <div class="spacer">
+            <div class="triangle"></div>
+          </div>
+          <button onclick="changeLanguage('en')" class="btn1">English</button>
+          <button onclick="changeLanguage('es')" class="btn2">Español</button>
+        </div>
+      </div>
+      <div class="menu-container">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="#home" data-en="Home" data-es="Inicio">Home</a>
+        </li>
+        <li>
+          <a
+            href="#features-header"
+            data-en="Features"
+            data-es="Características"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a href="#photo-gallery" data-en="Gallery" data-es="Galería"
+            >Gallery</a
+          >
+        </li>
+        <li>
+          <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Sección 1: Home -->
+    <section id="home">
+      <video autoplay loop preload="auto" class="video" muted>
+        <source src="../IMAGES/video_intro_corto_2.mp4" type="video/mp4" />
+        <source src="../IMAGES/video_intro_corto.ogg" type="video/ogg" />
+        Your browser does not support HTML5 video.
+      </video>
+    </section>
+
+    <div class="main">
+      <section id="features-header">
+        <div id="features-header2">
+          <h1 class="content en" style="display: none">Features</h1>
+          <h1 class="content es">Caracteristicas</h1>
+          <p class="content en" style="display: none">
+            Learn about our features
+          </p>
+          <p class="content es">Conoce nuestras características</p>
+        </div>
+      </section>
+
+      <!-- Bienvenida -->
+      <section id="welcome">
+        <div class="content en">
+          <p>
+            This exquisite luxury residence located in Campillo de Altobuey,
+            Cuenca (Spain) nestles on nearly 7 hectares of land. OƯering endless
+            possibilities, this stunning estate is a blank canvas for your dream
+            lifestyle. A two-hour drive from Spain’s capital city, Madrid, a one
+            hour drive from Valencia (beach coast & pleasant weather) and half
+            an hour from Cuenca's High-Speed Train station.
+          </p>
+        </div>
+        <div class="content es" style="display: none">
+          <p>
+            Esta exclusiva residencia de lujo, asentada en una finca de casi 7
+            hectáreas en Campillo de Altobuey (Cuenca), cuenta con multiples
+            posibilidades y beneficios de uso para el futuro comprador y de
+            poder desarrollar un proyecto empresarial. Esta finca te brinda un
+            lienzo en blanco para crear tu propio sueño. A dos horas de Madrid
+            en coche, una hora de Valencia (playa, clima) y a media hora de
+            Cuenca (estación AVE).
+          </p>
+        </div>
+        <div class="buttons">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </section>
+
+      <!-- Virtual Tour -->
+      <section class="tour">
+        <a
+          href="https://my.matterport.com/show/?m=SnNKTNLPGqm"
+          class="tour-link"
+        >
+          <div id="tour">
+            <div class="virtual-tour">
+              <img src="../IMAGES/INTERIOR/Hall 1.jpg" alt="" />
+              <div class="overlay">
+                <div>
+                  <button class="play-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                      width="48px"
+                      height="48px"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </button>
+                  <p class="explore-text">Explore 3D Space</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <!-- Sección 2: Características -->
+      <section id="features">
+        <div class="content en">
+          <div class="feature-item">
+            <img src="../IMAGES/EXTERIOR/La casa 03.jpg" alt="Feature 1" />
+            <ul>
+              <h1>The Estate is a Breathtaking Luxury Residence:</h1>
+              <li class="en">
+                <strong>Expansive and luminous spaces:</strong>
+                Over 1500m² of built space featuring high-quality finishes. The
+                color palette has been carefully chosen to blend seamlessly with
+                the natural surroundings.
+              </li>
+              <li class="en">
+                <strong>Luxurious amenities:</strong> 5 spacious bedrooms (40m²)
+                and a 70m² master suite, each with a kingsized bed, ensuite
+                bathroom with hydro-massage tub, and breathtaking countryside
+                views. Additional features include a living room, oƯices, indoor
+                heated pool, sauna, steam room, gym, cinema room,
+                temperature-controlled wine cellar, and a rustic kitchen with a
+                fireplace for roasting.
+              </li>
+              <li class="en">
+                <strong>Comfort and functionality:</strong> A three-story
+                elevator, oversized fireplaces, panoramic views, and premium
+                finishes. The environment promotes relaxation, rejuvenation, and
+                allows to be disconnected from the fast-paced world.
+              </li>
+            </ul>
+          </div>
+          <div class="feature-item reverse">
+            <img src="../IMAGES/EXTERIOR/Jardín 7 1.jpg" alt="Feature 2" />
+            <ul>
+              <h1>A Self-Sufficient and Eco-Friendly Estate:</h1>
+              <li class="en">
+                <strong>Certified organic food production:</strong>
+                A nearly 3-hectare irrigated orchard cultivated and vegetable
+                gardens, using sustainable practices, organic seeds, and no
+                harmful chemicals. A farm where animals roam freely and are fed
+                on a healthy diet from the organic crops. Fruit trees, olive
+                groves, vineyards, and much more.
+              </li>
+              <li class="en">
+                <strong>Sustainability:</strong> A 50kw emergency generator,
+                private well, eco-friendly agricultural practices, and quality
+                certification.
+              </li>
+              <li class="en">
+                <strong>Nature and wellness:</strong> 30,000m² of ecologically
+                maintained gardens, a riding arena with river sand, a 6-stall
+                horse stable (expandable to 12), a caretaker's house, and a
+                large 300m² storage barn.
+              </li>
+            </ul>
+          </div>
+          <div class="feature-item">
+            <img src="../IMAGES/INTERIOR/Entrada.jpg" alt="Feature 3" />
+            <ul>
+              <h1>A Unique Setting and Investment Potential:</h1>
+              <li class="en">
+                <strong>Tranquility and privacy:</strong>
+                Surrounded by a peaceful natural environment, this is a perfect
+                location for those desiring a peaceful environment. With
+                beautiful surroundings: rivers, forests, waterfalls...
+              </li>
+              <li class="en">
+                <strong>Investment opportunities:</strong> Ideal as a luxury
+                family home; previously operated as a rural hotel with a food
+                license (3 spikes), oƯering potential for expansion to set up
+                guest cottages at the surroundings or for a bed and breakfast.
+                Other possibilities include a wellness retreat, co-living space,
+                an event venue, an educational center or even a horse riding
+                center.
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="feature-item reverse">
+      <img src="../IMAGES/INTERIOR/Hall 1.jpg" alt="Feature 4" />
+      <p>Feature 4 description.</p>
+    </div>
+    <div class="feature-item">
+      <img src="../IMAGES/INTERIOR/Salón Principal 4.jpg" alt="Feature 5" />
+      <p>Feature 5 description.</p>
+    </div>
+    <div class="feature-item reverse">
+      <img src="../IMAGES/INTERIOR/Piscina 1.jpg" alt="Feature 6" />
+      <p>Feature 6 description.</p>
+    </div> -->
+        </div>
+        <div class="content es" style="display: none">
+          <div class="feature-item">
+            <img src="../IMAGES/EXTERIOR/La casa 03.jpg" alt="Feature 1" />
+            <ul>
+              <h1>La finca es una impresionante residencia de lujo:</h1>
+              <li class="es">
+                <strong>Espacios amplios y luminosos:</strong>
+                más de 1500m² construidos con acabados de alta calidad, donde la
+                paleta de colores de sus construcciones han sido eligidos
+                cuidadosamente para que funden con los colores de su entorno
+                natural.
+              </li>
+              <li class="es">
+                <strong>Comodidades de lujo:</strong> 5 habitaciones de 40m² y
+                una suite principal de 70m², todas con camas de tamaño grande,
+                baño e hidromasjade y vistas a un campo siempre cambiante.
+                Salón, despachos, piscina interior climatizada, sauna y baño de
+                vapor, gimnasio, sala de cine, bodega refrigerada, cocina
+                rústica con chimenea para asados...
+              </li>
+              <li class="es">
+                <strong>Confort y funcionalidad:</strong>
+                Ascensor de tres plantas, chimeneas de gran tamaño, vistas
+                panorámicas y acabados de alta calidad. El entorno aboga por el
+                descanso, el relax y la desconexión del ritmo frenético y la
+                rutina.
+              </li>
+            </ul>
+          </div>
+          <div class="feature-item reverse">
+            <img src="../IMAGES/EXTERIOR/Jardín 7 1.jpg" alt="Feature 2" />
+            <ul>
+              <h1>Una finca autosuficiente y ecológica:</h1>
+              <li class="es">
+                <strong
+                  >Centro de producción de alimentos con certificación ecológica
+                  de calidad:
+                </strong>
+                que se compone de un huerto de casi 3 hectareas con regadío, que
+                es cultivado mediante cuidadosas prácticas de respeto al
+                terreno, con semillas sin modificar genéticamente, ausencia
+                total de abonos químicos, pesticidas y otros venenos; una granja
+                donde sus animales son criados en libertad con alimentación sana
+                procedente de los cultivos ecológicos. Frutales, olivos, viña
+              </li>
+              <li class="es">
+                <strong>Sostenibilidad:</strong> generador de emergencia de 50
+                Kw, pozo propio, prácticas agrícolas ecológicas y certificación
+                de calidad.
+              </li>
+              <li class="es">
+                <strong>Naturaleza y bienestar:</strong> 30000 m2 de jardines de
+                mantenimiento ecológico, picadero drenado con arena de río,
+                cuadra de caballos de 6 boxes, ampliables a 12, guardanés, casa
+                de guardeses y gran nave almacén de 300m2.
+              </li>
+            </ul>
+          </div>
+          <div class="feature-item">
+            <img src="../IMAGES/INTERIOR/Entrada.jpg" alt="Feature 3" />
+            <ul>
+              <h1>Un entorno único y potencial de negocio:</h1>
+              <li class="es">
+                <strong>Tranquilidad y privacidad:</strong>
+                Rodeada de un entorno natural y apacible. Es un lugar para
+                aquellos que quieran estar ‘desconectado’. Con preciosos
+                alrededores: ríos, bosques, cascadas...
+              </li>
+              <li class="es">
+                <strong>Oportunidades de inversión:</strong>
+                como casa familiar de lujo; como potencial turístico ya que en
+                el pasado ha sido hotel rural y tiene licencia de casa rural con
+                derecho a comida (3 espigas); posibilidad de construir casitas
+                en el jardín y grupo de habitaciones; un centro encuestre, un
+                espacio para desarrollar co-living, lugar para eventos, centro
+                de formación.
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="feature-item reverse">
+      <img src="../IMAGES/INTERIOR/Hall 1.jpg" alt="Feature 4" />
+      <p>Descripción de la característica 4.</p>
+    </div>
+    <div class="feature-item">
+      <img src="../IMAGES/INTERIOR/Salón Principal 4.jpg" alt="Feature 5" />
+      <p>Descripción de la característica 5.</p>
+    </div>
+    <div class="feature-item reverse">
+      <img src="../IMAGES/INTERIOR/Piscina 1.jpg" alt="Feature 6" />
+      <p>Descripción de la característica 6.</p>
+    </div> -->
+        </div>
+      </section>
+
+      <!-- Título de Galería -->
+      <section>
+        <div id="gallery-header">
+          <h1 class="content en" style="display: none">Gallery of photos</h1>
+          <h1 class="content es">Galería de fotos</h1>
+          <p class="content en" style="display: none">
+            Explore our exclusive images
+          </p>
+          <p class="content es">Explora nuestras imágenes exclusivas</p>
+        </div>
+      </section>
+
+      <!-- Carrusel de Fotos -->
+      <section>
+        <div class="container-carousel">
+          <div class="carruseles" id="slider">
+            <section class="slider-section">
+              <img src="../IMAGES/EXTERIOR/Jardín 1.JPG" />
+            </section>
+            <section class="slider-section">
+              <img src="../IMAGES/EXTERIOR/Jardín 2.JPG" />
+            </section>
+            <section class="slider-section">
+              <img src="../IMAGES/EXTERIOR/La Casa 0.JPG" />
+            </section>
+            <section class="slider-section">
+              <img src="../IMAGES/EXTERIOR/Casa de los guardeses.jpg" />
+            </section>
+            <section class="slider-section">
+              <img src="../IMAGES/EXTERIOR/La Casa 02.jpg" />
+            </section>
+            <section class="slider-section">
+              <img src="../IMAGES/INTERIOR/Entrada.jpg" />
+            </section>
+            <section class="slider-section">
+              <img src="../IMAGES/INTERIOR/Gimnasio Sala Masaje 1.jpg" />
+            </section>
+            <section class="slider-section">
+              <img src="../IMAGES/INTERIOR/Habitación Suite de 1.jpg" />
+            </section>
+            <section class="slider-section">
+              <img src="../IMAGES/INTERIOR/Office Cocina.jpg" />
+            </section>
+            <section class="slider-section">
+              <img src="../IMAGES/INTERIOR/Piscina 1.jpg" />
+            </section>
+          </div>
+          <div class="btn-left">
+            <i class="bx bx-chevron-left"></i>
+          </div>
+          <div class="btn-right">
+            <i class="bx bx-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galería de Imágenes -->
+
+      <!-- Título de la Galería Exterior -->
+      <section id="photo-gallery">
+        <div id="gallery-header">
+          <h1 class="content es">Imágenes exteriores</h1>
+          <h1 class="content en" style="display: none">Exterior images</h1>
+          <p class="content es">
+            Explora las vistas impresionantes de los exteriores
+          </p>
+          <p class="content en" style="display: none">
+            Explore the stunning views of the exteriors
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <img
+            src="../IMAGES/EXTERIOR/Vista general 1.JPG"
+            alt="Foto 1"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/EXTERIOR/Vista general 2.jpg"
+            alt="Foto 2"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/EXTERIOR/Vista general 3.JPG"
+            alt="Foto 3"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/EXTERIOR/Jardín 1.JPG"
+            alt="Foto 4"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/EXTERIOR/Jardín 2.JPG"
+            alt="Foto 5"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/EXTERIOR/Jardín 6.JPG"
+            alt="Foto 6"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/EXTERIOR/Jardín 7 1.jpg"
+            alt="Foto 7"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/EXTERIOR/La Casa 0.JPG"
+            alt="Foto 8"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/EXTERIOR/La casa 03.jpg"
+            alt="Foto 9"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/EXTERIOR/La casa 04.jpg"
+            alt="Foto 10"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/EXTERIOR/Nave almacén 1.jpg"
+            alt="Foto 11"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/EXTERIOR/Nave Almacén 2.jpg"
+            alt="Foto 12"
+            class="gallery-img"
+          />
+        </div>
+      </section>
+
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="lightbox">
+        <span id="close" class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Imagen ampliada" />
+      </div>
+
+      <!-- Título de la Galería Interior -->
+      <section id="photo-gallery2">
+        <div id="gallery-header">
+          <h1 class="content es">Imágenes interiores</h1>
+          <h1 class="content en" style="display: none">Interior images</h1>
+          <p class="content es">
+            Descubre los detalles hermosos de los interiores
+          </p>
+          <p class="content en" style="display: none">
+            Discover the beautiful details of the interiors
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <img
+            src="../IMAGES/INTERIOR/Entrada.jpg"
+            alt="Foto 1"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Hall 1.jpg"
+            alt="Foto 2"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Hall 2.jpg"
+            alt="Foto 3"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Hall 3.jpg"
+            alt="Foto 4"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Hall 4.jpg"
+            alt="Foto 5"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Hall 5.jpg"
+            alt="Foto 6"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Salón Principal 2.jpg"
+            alt="Foto 7"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Salón Principal 4.jpg"
+            alt="Foto 8"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Cocina 1.jpg"
+            alt="Foto 9"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Cocina 3.jpg"
+            alt="Foto 10"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Office Cocina.jpg"
+            alt="Foto 11"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Cocinilla 2.jpg"
+            alt="Foto 12"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Cocinilla 3.jpg"
+            alt="Foto 13"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Sala de Cine Hi fi Bar 1.jpg"
+            alt="Foto 14"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Sala de Cine Hi fi Bar 3 - Porche de la Sala de Cine.JPG"
+            alt="Foto 15"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Baño hall 1.jpg"
+            alt="Foto 16"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Baño hall 2.jpg"
+            alt="Foto 17"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Baño Sauna.jpg"
+            alt="Foto 18"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Baño Vapor.jpg"
+            alt="Foto 19"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Bodega.jpg"
+            alt="Foto 20"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Comedor 1.jpg"
+            alt="Foto 21"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Comedor 2.jpg"
+            alt="Foto 22"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Despacho Biblioteca 1.jpg"
+            alt="Foto 23"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Despacho Biblioteca 2.jpg"
+            alt="Foto 24"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Gimnasio Sala Masaje 1.jpg"
+            alt="Foto 25"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Gimnasio Sala Masaje 2.jpg"
+            alt="Foto 26"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación 1 de 1.jpg"
+            alt="Foto 27"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación 1 de 2.jpg"
+            alt="Foto 28"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación 2 de 1.jpg"
+            alt="Foto 29"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación 2 de 2.jpg"
+            alt="Foto 30"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación 3 de 1.jpg"
+            alt="Foto 31"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación 3 de 2.jpg"
+            alt="Foto 32"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación 4 de 1.jpg"
+            alt="Foto 33"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación 4 de 2.jpg"
+            alt="Foto 34"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación 5 de 1.jpg"
+            alt="Foto 35"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación 5 de 2.jpg"
+            alt="Foto 36"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación Suite de 1.jpg"
+            alt="Foto 37"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Habitación Suite de 2.jpg"
+            alt="Foto 38"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Piscina 1.jpg"
+            alt="Foto 39"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Piscina 2.jpg"
+            alt="Foto 40"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Piscina 3.jpg"
+            alt="Foto 41"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Piscina 4.jpg"
+            alt="Foto 42"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Piscina 5.jpg"
+            alt="Foto 43"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Piscina 6.jpg"
+            alt="Foto 44"
+            class="gallery-img"
+          />
+          <img
+            src="../IMAGES/INTERIOR/Piscina 7.jpg"
+            alt="Foto 45"
+            class="gallery-img"
+          />
+        </div>
+      </section>
+
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="lightbox">
+        <span id="close" class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Imagen ampliada" />
+      </div>
+
+      <!-- Sección 3: Contacto -->
+      <footer id="contact">
+        <div class="content en">
+          <h2>Contact Us</h2>
+          <p>Email: example@example.com</p>
+          <p>Phone: +1 234 567 890</p>
+        </div>
+        <div class="content es" style="display: none">
+          <h2>Contáctanos</h2>
+          <p>Email: ejemplo@ejemplo.com</p>
+          <p>Teléfono: +34 123 456 789</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

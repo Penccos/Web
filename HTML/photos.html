@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos</title>
+    <link rel="stylesheet" href="../CSS/photos.css">
+    <script src="../JS/photos.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="menu-container">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html" data-en="Home" data-es="Inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#photo-gallery" data-en="Exterior images" data-es="Imágenes exteriores" class="nav-link">Imágenes exteriores</a></li>
+            <li><a href="#photo-gallery2" data-en="Interior images" data-es="Imágenes interiores" class="nav-link">Imágenes interiores</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botones de idioma -->
+    <div class="language-buttons">
+        <button onclick="changeLanguage('en')">EN</button>
+        <button onclick="changeLanguage('es')">ES</button>
+    </div>
+
+    <!-- Título de Galería -->
+    <section>
+        <div id="gallery-header">
+            <h1 class="content en" style="display: none;">Gallery of photos</h1>
+            <h1 class="content es">Galería de fotos</h1>
+            <p class="content en" style="display: none;">Explore our exclusive images</p>
+            <p class="content es">Explora nuestras imágenes exclusivas</p>
+        </div>
+    </section>
+
+    <!-- Carrusel de Fotos -->
+    <section>
+        <div class="container-carousel">
+            <div class="carruseles" id="slider">
+                <section class="slider-section">
+                    <img src="../IMAGES/EXTERIOR/Jardín 1.JPG">
+                </section>
+                <section class="slider-section">
+                    <img src="../IMAGES/EXTERIOR/Jardín 2.JPG">
+                </section>
+                <section class="slider-section">
+                    <img src="../IMAGES/EXTERIOR/La Casa 0.JPG">
+                </section>
+                <section class="slider-section">
+                    <img src="../IMAGES/EXTERIOR/Casa de los guardeses.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../IMAGES/EXTERIOR/La Casa 02.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../IMAGES/INTERIOR/Entrada.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../IMAGES/INTERIOR/Gimnasio Sala Masaje 1.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../IMAGES/INTERIOR/Habitación Suite de 1.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../IMAGES/INTERIOR/Office Cocina.jpg">
+                </section>
+                <section class="slider-section">
+                    <img src="../IMAGES/INTERIOR/Piscina 1.jpg">
+                </section>
+            </div>
+            <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+            <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+        </div>
+    </section>
+
+    <!-- Galería de Imágenes -->
+
+    <!-- Título de la Galería Exterior -->
+    <section id="photo-gallery">
+        <div id="gallery-header">
+            <h1 class="content es">Imágenes exteriores</h1>
+            <h1 class="content en" style="display: none;">Exterior images</h1>
+            <p class="content es">Explora las vistas impresionantes de los exteriores</p>
+            <p class="content en" style="display: none;">Explore the stunning views of the exteriors</p>
+        </div>
+        <div class="gallery-grid">
+            <img src="../IMAGES/EXTERIOR/Vista general 1.JPG" alt="Foto 1" class="gallery-img">
+            <img src="../IMAGES/EXTERIOR/Vista general 2.jpg" alt="Foto 2" class="gallery-img">
+            <img src="../IMAGES/EXTERIOR/Vista general 3.JPG" alt="Foto 3" class="gallery-img">
+            <img src="../IMAGES/EXTERIOR/Jardín 1.JPG" alt="Foto 4" class="gallery-img">
+            <img src="../IMAGES/EXTERIOR/Jardín 2.JPG" alt="Foto 5" class="gallery-img">
+            <img src="../IMAGES/EXTERIOR/Jardín 6.JPG" alt="Foto 6" class="gallery-img">
+            <img src="../IMAGES/EXTERIOR/Jardín 7 1.jpg" alt="Foto 7" class="gallery-img">
+            <img src="../IMAGES/EXTERIOR/La Casa 0.JPG" alt="Foto 8" class="gallery-img">
+            <img src="../IMAGES/EXTERIOR/La casa 03.jpg" alt="Foto 9" class="gallery-img">
+            <img src="../IMAGES/EXTERIOR/La casa 04.jpg" alt="Foto 10" class="gallery-img">
+            <img src="../IMAGES/EXTERIOR/Nave almacén 1.jpg" alt="Foto 11" class="gallery-img">
+            <img src="../IMAGES/EXTERIOR/Nave Almacén 2.jpg" alt="Foto 12" class="gallery-img">
+            
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span id="close" class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+    <!-- Título de la Galería Interior -->
+    <section id="photo-gallery2">
+        <div id="gallery-header">
+            <h1 class="content es">Imágenes interiores</h1>
+            <h1 class="content en" style="display: none;">Interior images</h1>
+            <p class="content es">Descubre los detalles hermosos de los interiores</p>
+            <p class="content en" style="display: none;">Discover the beautiful details of the interiors</p>
+        </div>
+        <div class="gallery-grid">
+            <img src="../IMAGES/INTERIOR/Entrada.jpg" alt="Foto 1" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Hall 1.jpg" alt="Foto 2" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Hall 2.jpg" alt="Foto 3" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Hall 3.jpg" alt="Foto 4" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Hall 4.jpg" alt="Foto 5" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Hall 5.jpg" alt="Foto 6" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Salón Principal 2.jpg" alt="Foto 7" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Salón Principal 4.jpg" alt="Foto 8" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Cocina 1.jpg" alt="Foto 9" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Cocina 3.jpg" alt="Foto 10" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Office Cocina.jpg" alt="Foto 11" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Cocinilla 2.jpg" alt="Foto 12" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Cocinilla 3.jpg" alt="Foto 13" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Sala de Cine Hi fi Bar 1.jpg" alt="Foto 14" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Sala de Cine Hi fi Bar 3 - Porche de la Sala de Cine.JPG" alt="Foto 15" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Baño hall 1.jpg" alt="Foto 16" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Baño hall 2.jpg" alt="Foto 17" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Baño Sauna.jpg" alt="Foto 18" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Baño Vapor.jpg" alt="Foto 19" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Bodega.jpg" alt="Foto 20" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Comedor 1.jpg" alt="Foto 21" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Comedor 2.jpg" alt="Foto 22" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Despacho Biblioteca 1.jpg" alt="Foto 23" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Despacho Biblioteca 2.jpg" alt="Foto 24" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Gimnasio Sala Masaje 1.jpg" alt="Foto 25" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Gimnasio Sala Masaje 2.jpg" alt="Foto 26" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación 1 de 1.jpg" alt="Foto 27" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación 1 de 2.jpg" alt="Foto 28" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación 2 de 1.jpg" alt="Foto 29" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación 2 de 2.jpg" alt="Foto 30" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación 3 de 1.jpg" alt="Foto 31" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación 3 de 2.jpg" alt="Foto 32" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación 4 de 1.jpg" alt="Foto 33" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación 4 de 2.jpg" alt="Foto 34" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación 5 de 1.jpg" alt="Foto 35" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación 5 de 2.jpg" alt="Foto 36" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación Suite de 1.jpg" alt="Foto 37" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Habitación Suite de 2.jpg" alt="Foto 38" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Piscina 1.jpg" alt="Foto 39" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Piscina 2.jpg" alt="Foto 40" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Piscina 3.jpg" alt="Foto 41" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Piscina 4.jpg" alt="Foto 42" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Piscina 5.jpg" alt="Foto 43" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Piscina 6.jpg" alt="Foto 44" class="gallery-img">
+            <img src="../IMAGES/INTERIOR/Piscina 7.jpg" alt="Foto 45" class="gallery-img">
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span id="close" class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+    <!-- Sección: Contacto -->
+    <footer id="contact">
+        <div class="content en">
+            <h2>Contact Us</h2>
+            <p>Email: example@example.com</p>
+            <p>Phone: +1 234 567 890</p>
+        </div>
+        <div class="content es" style="display:none;">
+            <h2>Contáctanos</h2>
+            <p>Email: ejemplo@ejemplo.com</p>
+            <p>Teléfono: +34 123 456 789</p>
+        </div>
+    </footer>
+</body>
+</html>
