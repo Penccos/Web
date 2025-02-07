@@ -143,15 +143,29 @@ const bntLeftImg = document.getElementById("btn-left-img");
 const bntRightImg = document.getElementById("btn-right-img");
 
 let currentImageIndex = 0;
+let lightboxEnabled = false;
 
 // Función para abrir el lightbox
 images.forEach((image, index) => {
     image.addEventListener("click", () => {
         currentImageIndex = index
         lightbox.style.display = "flex"; // Mostrar el lightbox
+        lightboxEnabled = true;
         lightboxImg.src = image.src; // Establecer la imagen en el lightbox
     });
 });
+
+document.addEventListener("keydown", (e) => {
+  if (lightboxEnabled) {
+    if (e.key === "ArrowLeft") {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      lightboxImg.src = images[currentImageIndex].src;
+    } else if (e.key === "ArrowRight") {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      lightboxImg.src = images[currentImageIndex].src;
+    }
+  }
+})
 
 bntLeftImg.addEventListener('click', () => {
     currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
@@ -166,12 +180,14 @@ bntLeftImg.addEventListener('click', () => {
 // Función para cerrar el lightbox
 closeBtn.addEventListener("click", () => {
     lightbox.style.display = "none"; // Ocultar el lightbox
+    lightboxEnabled = false;
 });
 
 // Cerrar el lightbox si se hace clic fuera de la imagen
 lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) {
         lightbox.style.display = "none"; // Ocultar el lightbox
+        lightboxEnabled = false;
     }
 });
 
