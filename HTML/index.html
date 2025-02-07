@@ -38,7 +38,7 @@
       <div class="menu-container">
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
       </div>
-      <ul class="menu">
+      <ul id="menu" class="menu">
         <li>
           <a href="#home" data-en="Home" data-es="Inicio">Home</a>
         </li>
@@ -63,7 +63,7 @@
 
     <!-- Sección 1: Home -->
     <section id="home">
-      <video autoplay loop preload="auto" class="video" muted>
+      <video autoplay loop preload="metadata" poster="" class="video" muted>
         <source src="../IMAGES/video_intro_corto_2.mp4" type="video/mp4" />
         <source src="../IMAGES/video_intro_corto.ogg" type="video/ogg" />
         Your browser does not support HTML5 video.
@@ -79,40 +79,6 @@
             Learn about our features
           </p>
           <p class="content es">Conoce nuestras características</p>
-        </div>
-      </section>
-
-      <!-- Bienvenida -->
-      <section id="welcome">
-        <div class="content en">
-          <p>
-            This exquisite luxury residence located in Campillo de Altobuey,
-            Cuenca (Spain) nestles on nearly 7 hectares of land. OƯering endless
-            possibilities, this stunning estate is a blank canvas for your dream
-            lifestyle. A two-hour drive from Spain’s capital city, Madrid, a one
-            hour drive from Valencia (beach coast & pleasant weather) and half
-            an hour from Cuenca's High-Speed Train station.
-          </p>
-        </div>
-        <div class="content es" style="display: none">
-          <p>
-            Esta exclusiva residencia de lujo, asentada en una finca de casi 7
-            hectáreas en Campillo de Altobuey (Cuenca), cuenta con multiples
-            posibilidades y beneficios de uso para el futuro comprador y de
-            poder desarrollar un proyecto empresarial. Esta finca te brinda un
-            lienzo en blanco para crear tu propio sueño. A dos horas de Madrid
-            en coche, una hora de Valencia (playa, clima) y a media hora de
-            Cuenca (estación AVE).
-          </p>
-        </div>
-        <div class="buttons">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
         </div>
       </section>
 
@@ -149,6 +115,22 @@
       <!-- Sección 2: Características -->
       <section id="features">
         <div class="content en">
+          <div class="feature-item reverse">
+            <div class="fade-container">
+              <img src="../IMAGES/PLANOS/1 Plano Cuesta de Patas.jpg" class="fade-image" id="img-location" alt="Plano 1" />
+              <img src="../IMAGES/PLANOS/2 Plano Cuesta de Patas (1).jpg" class="fade-image" id="img-location2" alt="Plano 2" />
+            </div>
+            <ul>
+              <h1>Location of Cuesta de Patas Luxury Estate between Madrid and Valencia</h1>
+              <li class="en">
+                This exquisite luxury residence located in Campillo de Altobuey, 
+                Cuenca (Spain) nestles on nearly 7 hectares of land. OƯering endless possibilities, 
+                this stunning estate is a blank canvas for your dream lifestyle. 
+                A two-hour drive from Spain’s capital city, Madrid, a one hour drive from Valencia (beach coast & pleasant weather)
+                and half an hour from Cuenca's High-Speed Train station.
+              </li>
+            </ul>
+          </div>
           <div class="feature-item">
             <img src="../IMAGES/CARDS/image (2).png" alt="Feature 1" />
             <ul>
@@ -241,7 +223,20 @@
       <p>Feature 6 description.</p>
     </div> -->
         </div>
+        
         <div class="content es" style="display: none">
+          <div class="feature-item reverse">
+            <img src="../IMAGES/PLANOS/1 Plano Cuesta de Patas.jpg" alt="Feature 0" />
+            <ul>
+              <h1>Localización la finca Cuesta de Patas entre Madrid y Valencia</h1>
+              <li class="es">
+                Esta exclusiva residencia de lujo, asentada en una finca de casi 7 hectáreas en Campillo de Altobuey (Cuenca), 
+                cuenta con multiples posibilidades y beneficios de uso para el futuro comprador y de poder desarrollar un 
+                proyecto empresarial. Esta finca te brinda un lienzo en blanco para crear tu propio sueño. A dos horas de Madrid en coche,
+                una hora de Valencia (playa, clima) y a media hora de Cuenca (estación AVE).
+              </li>
+            </ul>
+          </div>
           <div class="feature-item">
             <img src="../IMAGES/EXTERIOR/La casa 03.jpg" alt="Feature 1" />
             <ul>
@@ -478,7 +473,15 @@
       <!-- Lightbox Modal -->
       <div id="lightbox" class="lightbox">
         <span id="close" class="close">&times;</span>
-        <img id="lightbox-img" src="" alt="Imagen ampliada" />
+        <div class="lightbox-content">
+          <div class="btn-left" id="btn-left-img">
+            <i class="bx bx-chevron-left"></i>
+          </div>
+          <div class="btn-right" id="btn-right-img">
+            <i class="bx bx-chevron-right"></i>
+          </div>
+          <img id="lightbox-img" src="" alt="Imagen ampliada" />
+        </div>
       </div>
 
       <!-- Título de la Galería Interior -->
