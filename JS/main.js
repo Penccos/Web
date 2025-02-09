@@ -5,6 +5,7 @@ function changeLanguage(language) {
     const navLinks = document.querySelectorAll("nav ul li a");
     const langImg = document.getElementById("lang-img");
     // Cambiar el texto de los enlaces de navegación
+    
     navLinks.forEach((link) => {
         const textEn = link.getAttribute("data-en");
         const textEs = link.getAttribute("data-es");
@@ -224,15 +225,36 @@ for (let i = 0; i < menuItems.length; i++) {
     });
 }
 
-const imgsLocation = document.querySelectorAll(".fade-image");
-let index = 0;
-imgsLocation[index].classList.add("active")
+const fade1En = document.getElementById("fade1-en");
+const fade1Es = document.getElementById("fade1-es");
+const imgsLocation1En = fade1En.querySelectorAll(".fade-image");
+const imgsLocation1Es = fade1Es.querySelectorAll(".fade-image");
 
+const fadeMolinilloEn = document.getElementById("fade-molinillo-en");
+const fadeMolinilloEs = document.getElementById("fade-molinillo-es");
+const imgsElMolinilloEn = fadeMolinilloEn.querySelectorAll(".fade-image");
+const imgsElMolinilloEs = fadeMolinilloEs.querySelectorAll(".fade-image");
+
+let index1 = 0;
+let indexElMolinillo = 0;
+
+imgsLocation1En[index1].classList.add("active")
+imgsLocation1Es[index1].classList.add("active")
+
+imgsElMolinilloEn[indexElMolinillo].classList.add("active")
+imgsElMolinilloEs[indexElMolinillo].classList.add("active")
 
 const changeImage = () => {
-    imgsLocation[index].classList.remove("active")
-    index = (index + 1) % imgsLocation.length
-    imgsLocation[index].classList.add("active")
+  imgsLocation1En[index1].classList.remove("active")
+  imgsLocation1Es[index1].classList.remove("active")
+  imgsElMolinilloEn[indexElMolinillo].classList.remove("active")
+  imgsElMolinilloEs[indexElMolinillo].classList.remove("active")
+  index1 = (index1 + 1) % imgsLocation1En.length
+  indexElMolinillo = (indexElMolinillo + 1) % imgsElMolinilloEn.length
+  imgsLocation1En[index1].classList.add("active")
+  imgsLocation1Es[index1].classList.add("active")
+  imgsElMolinilloEn[indexElMolinillo].classList.add("active")
+  imgsElMolinilloEs[indexElMolinillo].classList.add("active")
 }
 
 setInterval(() => {
