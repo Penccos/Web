@@ -164,6 +164,9 @@ document.addEventListener("keydown", (e) => {
     } else if (e.key === "ArrowRight") {
       currentImageIndex = (currentImageIndex + 1) % images.length;
       lightboxImg.src = images[currentImageIndex].src;
+    } else if (e.key === "Escape") {
+      lightbox.style.display = "none";
+      lightboxEnabled = false;
     }
   }
 })
@@ -260,3 +263,4 @@ const changeImage = () => {
 setInterval(() => {
     changeImage();
 }, 4000);
+

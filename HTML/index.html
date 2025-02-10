@@ -14,6 +14,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script type="module" src="../JS/video.js"></script>
   </head>
 
   <body>
@@ -53,6 +54,11 @@
         <li>
           <a href="#photo-gallery" data-en="Gallery" data-es="Galería"
             >Gallery</a
+          >
+        </li>
+        <li>
+          <a href="#el-molinillo" data-en="El Molinillo" data-es="El Molinillo"
+            >Contact</a
           >
         </li>
         <li>
@@ -437,7 +443,7 @@
             Explora las vistas impresionantes de los exteriores
           </p>
           <p class="content en" style="display: none">
-            Explore the stunning views of the exteriors
+            Explore the amazing views of the exteriors
           </p>
         </div>
         <div class="gallery-grid">
@@ -506,7 +512,7 @@
 
       <!-- Lightbox Modal -->
       <div id="lightbox" class="lightbox">
-        <span id="close" class="close">&times;</span>
+        <div id="close" class="close">&times;</div>
         <div class="lightbox-content">
           <div class="btn-left" id="btn-left-img">
             <i class="bx bx-chevron-left"></i>
@@ -759,15 +765,15 @@
         </div>
       </section>
 
-      <section>
+      <section id="el-molinillo">
         <div id="gallery-header">
-          <h1 class="content es">El Molinillo</h1>
-          <h1 class="content en" style="display: none">El Molinillo</h1>
+          <h1 class="content es">Coto El Molinillo</h1>
+          <h1 class="content en" style="display: none">El Molinillo Reserve</h1>
           <p class="content es">
             Explora las vistas impresionantes de El Molinillo
           </p>
           <p class="content en" style="display: none">
-            Explore the stunning views of El Molinillo
+            Explore the amazing views of El Molinillo
           </p>
         </div>
       </section>
@@ -808,6 +814,7 @@
               />
             </div>
             <ul>
+              <h1>El Molinillo Reserve:</h1>
               <li class="en">
                 El Molinillo is a pristine open range reserve of 336 acres, with
                 untouched wilderness. Ravines, cliffs, natural springs, river
@@ -857,6 +864,7 @@
               />
             </div>
             <ul>
+              <h1>Coto El Molinillo:</h1>
               <li class="es">
                 El Molinillo es un coto de caza abierto, sin vallar, de 336
                 hectáreas donde encontramos barrancos, riscos, fuentes,
@@ -872,46 +880,46 @@
         </div>
       </section>
 
-      <!-- Lightbox Modal -->
-      <div id="lightbox" class="lightbox">
-        <span id="close" class="close">&times;</span>
-        <img id="lightbox-img" src="" alt="Imagen ampliada" />
-      </div>
-
       <!-- Sección 3: Contacto -->
       <footer id="contact">
-        <div class="content">
-          <div class="logo">
-            <img src="../IMAGES/LOGO/LogoWhite.svg" alt="Logo" />
-          </div>
-          <div class="info">
-            <p><strong>Contact us:</strong></p>
-            <div>
-              <p>Manuel Pérez</p>
-              <p><strong>Consultor inmobiliario eXp Reality Spain</strong></p>
+        <div class="content en">
+          <div class="inner">
+            <div class="logo">
+              <img src="../IMAGES/LOGO/LogoWhite.svg" alt="Logo" />
             </div>
-            <div>
-              <p>(+34) 610 57 52 77</p>
-              <p>manuel.perez@expglobalspain.com</p>
-              <p>www.expglobalspain.com</p>
+            <div class="info">
+              <p><strong>Contact us:</strong></p>
+              <div>
+                <p>Manuel Pérez</p>
+                <p><strong>Consultor Inmobiliario eXp Reality Spain</strong></p>
+              </div>
+              <div>
+                <p>(+34) 610 57 52 77</p>
+                <p>manuel.perez@expglobalspain.com</p>
+                <p>www.expglobalspain.com</p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- <div class="content es" style="display: none">
-          <div class="logo">
-            <img src="../IMAGES/LOGO/LogoWhite.svg" alt="Logo" />
+        <div class="content es">
+          <div class="inner">
+            <div class="logo">
+              <img src="../IMAGES/LOGO/LogoWhite.svg" alt="Logo" />
+            </div>
+            <div class="info">
+              <p><strong>Para más información:</strong></p>
+              <div>
+                <p>Manuel Pérez</p>
+                <p><strong>Consultor Inmobiliario eXp Reality Spain</strong></p>
+              </div>
+              <div>
+                <p>(+34) 610 57 52 77</p>
+                <p>manuel.perez@expglobalspain.com</p>
+                <p>www.expglobalspain.com</p>
+              </div>
+            </div>
           </div>
-          <p>Contact us:</p>
-          <div>
-            <p>Manuel Pérez</p>
-            <p><strong>Consultor inmobiliario eXp Reality Spain</strong></p>
-          </div>
-          <div>
-            <p>(+34) 610 57 52 77</p>
-            <p>manuel.perez@expglobalspain.com</p>
-            <p>www.expglobalspain.com</p>
-          </div>
-        </div> -->
+        </div>
       </footer>
     </div>
   </body>
