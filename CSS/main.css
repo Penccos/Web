@@ -1,6 +1,5 @@
 @import url("./vars.css");
 
-/* General Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -205,7 +204,6 @@ nav {
   transform: scale(1.1); /* Pequeño aumento al pasar el mouse */
 }
 
-/* Sección 1: home */
 #home {
   height: fit-content;
   max-height: 95vh;
